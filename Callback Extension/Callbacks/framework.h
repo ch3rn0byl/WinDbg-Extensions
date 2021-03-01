@@ -8,20 +8,17 @@
 #define KDEXT_64BIT
 #endif // !KDEXT_64BIT
 
-#define MAJOR	1
-#define MINOR	0
-#define MAX_SYMBOL_LENGTH	256
-
-// Windows Header Files
 #include <windows.h>
 #include <DbgEng.h>
 #include <string>
 #include <sstream>
 #include <WDBGEXTS.H>
 
-typedef IDebugClient* PIDebugClient;
-typedef IDebugControl* PIDebugControl;
-typedef IDebugSymbols* PIDebugSymbols;
+#include "callbacks.h"
+
+#define MAJOR	1
+#define MINOR	0
+#define MAX_SYMBOL_LENGTH	256
 
 
 /// EOF
